@@ -1,0 +1,17 @@
+<head>
+  <title>testcebug</title>
+</head>
+
+<body>
+  <h1>Welcome to Meteor!</h1>
+
+  {{> hello}}
+</body>
+
+<template name="hello">
+  {{>editable foo}}
+</template>
+
+<template name="editable">
+	<div class="editable" contenteditable style="width: 400px; height: 400px; border: 1px solid black;">{{text}}</div>
+</template>
